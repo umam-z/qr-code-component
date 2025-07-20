@@ -44,11 +44,7 @@ body {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-sm);
-  line-height: var(--line-height-normal);
-  letter-spacing: var(--letter-spacing-tight);
-  color: var(--slate-500);
   background-color: var(--slate-300);
-  text-align: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -72,6 +68,14 @@ body {
   width: 100%;
   border-radius: 10px;
   margin-block-end: var(--spacing-300);
+  display: block;
+}
+
+.card__content {
+  padding-left: var(--spacing-200);
+  padding-right: var(--spacing-200);
+  text-align: center;
+  color: var(--slate-500);
 }
 
 .card__title {
@@ -83,9 +87,9 @@ body {
   color: var(--slate-900);
 }
 
-.card__content {
-  padding-left: var(--spacing-200);
-  padding-right: var(--spacing-200);
+.card__description {
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-tight);
 }
 
 .attribution {
