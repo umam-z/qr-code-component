@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap");
+:root {
+  /* colors */
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --white: hsl(0, 0%, 100%);
+
+  /* font family */
+  --font-family-primary: "Outfit", sans-serif;
+
+  /* font weight */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* font size scale */
+  --font-size-sm: 15px;
+  --font-size-md: 22px;
+
+  /* line height scale */
+  --line-height-tight: 120%;
+  --line-height-normal: 140%;
+
+  /* letter spacing */
+  --letter-spacing-none: 0px;
+  --letter-spacing-tight: 0.2px;
+
+  /* spacing */
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
+}
+
+/* 1. RESET DASAR */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--slate-500);
+  background-color: var(--slate-300);
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-300);
+}
+
+.card {
+  width: 85.3333%;
+  max-width: 320px;
+  background-color: var(--white);
+  padding-top: var(--spacing-200);
+  padding-left: var(--spacing-200);
+  padding-right: var(--spacing-200);
+  padding-bottom: var(--spacing-500);
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-block-end: var(--spacing-300);
+}
+
+.card__title {
+  margin-block-end: var(--spacing-200);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-none);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--slate-900);
+}
+
+.card__content {
+  padding-left: var(--spacing-200);
+  padding-right: var(--spacing-200);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
